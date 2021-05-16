@@ -1,0 +1,21 @@
+li {
+  cursor: pointer;
+  list-style-type: none;
+  max-width: 300px;
+  padding: 8px;
+  margin: 8px auto;
+  background: #eee;
+  border: 1px dotted #ddd;
+  border-radius: 4px;
+}
+.remove {
+  float: right;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: #ddd;
+  border-radius: 3px;
+}
+.center {
+  margin-left: 4vw;
+}

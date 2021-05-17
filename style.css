@@ -1,21 +1,61 @@
-li {
+.container {
+  max-width: 400px;
+}
+
+.list-group-item {
+  color: #fff !important;
+}
+input[type="text"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+.todos li {
+  background: #64646693;
+}
+.delete {
   cursor: pointer;
-  list-style-type: none;
+}
+.popup-wrapper {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: none;
+}
+.popup {
+  font-family: arial;
+  text-align: center;
+  width: 100%;
   max-width: 300px;
-  padding: 8px;
-  margin: 8px auto;
-  background: #eee;
-  border: 1px dotted #ddd;
-  border-radius: 4px;
+  margin: 10% auto;
+  border: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  background: white;
+  position: relative;
 }
-.remove {
-  float: right;
-  cursor: pointer;
-  background-color: red;
+
+.popup button {
+  background: crimson;
+  border: #fff;
+  border-radius: 5px;
   color: white;
-  border: #ddd;
-  border-radius: 3px;
+  text-decoration: none;
+  padding: 6px 10px;
 }
-.center {
-  margin-left: 4vw;
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+}
+.filtered {
+  display: none !important;
 }
